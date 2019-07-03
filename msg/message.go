@@ -1,4 +1,4 @@
-package internal
+package msg
 
 import "github.com/rs/zerolog/log"
 

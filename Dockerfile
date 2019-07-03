@@ -1,9 +1,10 @@
-ga#1st build
+#1st build
 FROM golang:1.10
 WORKDIR /go/src/github.com/skarfie123/dockertest
 
 COPY main ./main
-COPY internal ./internal
+COPY msg ./msg
+COPY vendor ./vendor
 
 RUN CGO_ENABLED=0 GOOS=linux go install ./main
 
